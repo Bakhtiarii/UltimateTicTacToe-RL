@@ -51,5 +51,6 @@ Our trained DQN agent demonstrates impressive performance:
 * Experience Replay for stable Q-learning
 
 
-📚 References
+📚 References:
+
 This project builds upon foundational work in deep reinforcement learning, particularly the DQN architecture introduced by Mnih et al. (2015) and applies it to the unique challenges of Ultimate Tic-Tac-Toe's nested game structure.
