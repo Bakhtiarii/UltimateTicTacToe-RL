@@ -1,33 +1,36 @@
-Ultimate Tic-Tac-Toe with Deep Reinforcement Learning
+Ultimate Tic-Tac-Toe with Deep Reinforcement Learning:
+
 A sophisticated implementation of Ultimate Tic-Tac-Toe using Deep Q-Network (DQN) architecture, demonstrating how reinforcement learning can master complex, hierarchical board games with nested decision spaces.
-🎮 Project Overview
+
+🎮 Project Overview:
+
 Ultimate Tic-Tac-Toe transforms the classic 3×3 game into a challenging 9×9 grid composed of nine interconnected sub-boards, creating a rich strategic environment with approximately 3^81 possible configurations. This project implements an AI agent that learns to play this complex game through self-play and experience, without relying on traditional brute-force search algorithms.
-🚀 Key Features
 
-Custom OpenAI Gym Environment: Fully implemented Ultimate Tic-Tac-Toe environment following OpenAI Gym standards for standardized reinforcement learning
-Deep Q-Network Agent: Neural network-based agent with experience replay and epsilon-greedy exploration strategy
-Intelligent Move Validation: Enforces game-specific rules, including the unique constraint where players must play in sub-boards determined by the opponent's previous moves
-Self-Play Training: Agent improves through playing against itself, learning both tactical and strategic patterns
-Performance Metrics: Comprehensive evaluation against random players, other trained agents, and human opponents
+🚀 Key Features:
 
-🧠 Technical Architecture
-Components
+* Custom OpenAI Gym Environment: Fully implemented Ultimate Tic-Tac-Toe environment following OpenAI Gym standards for standardized reinforcement learning
+* Deep Q-Network Agent: Neural network-based agent with experience replay and epsilon-greedy exploration strategy
+* Intelligent Move Validation: Enforces game-specific rules, including the unique constraint where players must play in sub-boards determined by the opponent's previous moves
+* Self-Play Training: Agent improves through playing against itself, learning both tactical and strategic patterns
+* Performance Metrics: Comprehensive evaluation against random players, other trained agents, and human opponents
 
-Board Implementation: NumPy-based 9×9 game state management with sub-board tracking and winner detection
-DQN Architecture:
+🧠 Technical Architecture:
 
-3-layer fully connected neural network
-Input: 82-dimensional vector (81 board positions + last move)
-Output: Q-values for all 81 possible actions
-Experience replay buffer for stable training
+1- Board Implementation: NumPy-based 9×9 game state management with sub-board tracking and winner detection
+
+2- DQN Architecture:
+
+* 3-layer fully connected neural network
+* Input: 82-dimensional vector (81 board positions + last move)
+* Output: Q-values for all 81 possible actions
+* Experience replay buffer for stable training
 
 
-Training Strategy:
+3- Training Strategy:
 
 Epsilon-greedy exploration (ε = 1.0 → 0.01)
 Discount factor γ = 0.95
 Batch size of 32 for experience replay
-
 
 
 📊 Results
