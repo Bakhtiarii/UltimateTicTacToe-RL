@@ -44,11 +44,11 @@ Our trained DQN agent demonstrates impressive performance:
 
 🔧 Technologies Used:
 
-Python 3.x
-PyTorch/TensorFlow for neural network implementation
-OpenAI Gym for environment standardization
-NumPy for efficient array operations
-Experience Replay for stable Q-learning
+* Python 3.x
+* PyTorch/TensorFlow for neural network implementation
+* OpenAI Gym for environment standardization
+* NumPy for efficient array operations
+* Experience Replay for stable Q-learning
 
 
 📚 References
