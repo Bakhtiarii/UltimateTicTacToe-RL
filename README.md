@@ -33,15 +33,16 @@ Discount factor γ = 0.95
 Batch size of 32 for experience replay
 
 
-📊 Results
+📊 Results:
+
 Our trained DQN agent demonstrates impressive performance:
 
-vs Random Players: 26 wins, 68 draws, 6 losses (26% win rate, 68% draw rate)
-vs Trained Agents: 100% draw rate, showing equally matched strategic play
-vs Human Players: 50% win rate, 50% draw rate against intermediate players
-Successfully learned to identify and block winning moves while creating strategic opportunities
+* vs Random Players: 26 wins, 68 draws, 6 losses (26% win rate, 68% draw rate)
+* vs Trained Agents: 100% draw rate, showing equally matched strategic play
+* vs Human Players: 50% win rate, 50% draw rate against intermediate players
+* Successfully learned to identify and block winning moves while creating strategic opportunities
 
-🔧 Technologies Used
+🔧 Technologies Used:
 
 Python 3.x
 PyTorch/TensorFlow for neural network implementation
@@ -49,28 +50,6 @@ OpenAI Gym for environment standardization
 NumPy for efficient array operations
 Experience Replay for stable Q-learning
 
-🎯 Learning Insights
-This project demonstrates:
-
-How DRL can handle games with hierarchical decision-making and complex rule constraints
-The importance of proper action masking in environments with invalid moves
-The effectiveness of experience replay in stabilizing learning for complex state spaces
-The balance between exploration and exploitation in discovering optimal strategies
-
-📈 Future Enhancements
-
-Implement prioritized experience replay for more efficient learning
-Add support for multi-agent competitive training
-Develop a web interface for human vs AI gameplay
-Explore advanced architectures like Double DQN or Dueling DQN
-Implement curriculum learning with progressive difficulty
-
-👥 Contributors
-
-Yash Morankar
-Ojas Natu
-Dhaval Hatzade
-Mohammedreza Bakhtiari
 
 📚 References
 This project builds upon foundational work in deep reinforcement learning, particularly the DQN architecture introduced by Mnih et al. (2015) and applies it to the unique challenges of Ultimate Tic-Tac-Toe's nested game structure.
